@@ -151,9 +151,14 @@ public class CalendarFragment extends Fragment {
 	public void refreshFragment() {
 	    ButtonLoopView blv = (ButtonLoopView) this.getView().findViewById(R.id.myButton);
 	    BusinessAcount ba = MainActivity.db.findDailyInfo(day, month);
-	    if(ba != null && ba.cost != 0 && ba.income != 0)
+	    if(ba != null && ba.cost != 0 && ba.income != 0) {
 	    	blv.setValue(ba.cost*100 / ba.income);
+	    	
+	    }
 		else
-			blv.setValue(0);	
+			blv.setValue(0);
+	    
 	}
+	
+	
 }

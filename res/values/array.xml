@@ -3,6 +3,7 @@
     <string-array name = "names">
         <item>"Cost"</item>
         <item>"Income"</item>
+        
     </string-array>
     
     <string-array name = "angles">

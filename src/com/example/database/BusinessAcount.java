@@ -1,7 +1,11 @@
 package com.example.database;
 
+import android.content.Context;
+import android.text.NoCopySpan.Concrete;
 
-public class BusinessAcount {
+
+
+public class BusinessAcount{
 	public int day;
 	public String month;
 	public float cost;

@@ -1,5 +1,8 @@
 package com.example.customViews;
 
+import com.example.hw3.R;
+import com.example.hw3.R.styleable;
+
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Canvas;
@@ -8,12 +11,12 @@ import android.graphics.Paint;
 import android.graphics.Paint.Align;
 import android.graphics.Path;
 import android.graphics.PointF;
+import android.graphics.Rect;
 import android.graphics.RectF;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
-
-import com.example.hw3.R;
+import android.widget.Button;
 
 public class ButtonLoopView extends View{
 	

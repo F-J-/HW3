@@ -8,5 +8,14 @@
         android:orderInCategory="100"
         android:title="@string/action_settings"
         app:showAsAction="never"/>
-
+    
+	<item android:id="@+id/action_student1"
+          android:icon="@drawable/ic_student"
+          android:title="@string/student1_name"
+          app:showAsAction="ifRoom"/>
+    <item android:id="@+id/action_student2"
+          android:icon="@drawable/ic_student"
+          android:title="@string/student2_name"
+          app:showAsAction="ifRoom" />
+    
 </menu>
