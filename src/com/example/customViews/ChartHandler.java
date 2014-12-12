@@ -156,7 +156,10 @@ public class ChartHandler {
 			initializeChart(chart, ChartState.week);
 	}
 	
-	public static void zoom(ChartView chart) {
-		
+	public static void zoomChart(ChartView chart, boolean zoomInState) {
+		if (zoomInState)
+			zoomInChart(chart);
+		else
+			zoomOutChart(chart);
 	}
 }
