@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.example.hw3"
+    
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:drawable/gallery_thumb">
+
+    <LinearLayout 
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center" >
+        
+    <TextView android:id="@+id/text"
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textColor="@color/black"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+ 
+    <com.example.customViews.ButtonLoopView
+     android:layout_height="300dp"
+     android:layout_width="300dp"
+	 android:id="@+id/myButton"
+     app:thickness="100"
+     app:count="2"
+     app:arcColor="@color/articlecolor"
+     app:names="@array/names" 
+     app:angles="@array/angles" />
+    </LinearLayout>
+    
+    <com.example.customViews.DrawerViewGroup
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    app:content="@+id/drawer_content"
+        app:handle="@+id/drawer_handle"
+        app:zoomIn="@+id/zoomInButton"
+        app:zoomOut="@+id/zoomOutButton"
+        app:allowSingleTap="false" >
+        
+	    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/drawer_handle" />
+	    
+	    <com.example.customViews.ChartView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/drawer_content"
+        android:background="@color/black" />
+	    
+	    <Button 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/zoomInButton"
+        android:text="@string/zoom_in" />
+    
+    	<Button 
+      	android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/zoomOutButton"
+        android:text="@string/zoom_out" />
+	    
+	</com.example.customViews.DrawerViewGroup>
+    
+
+</RelativeLayout>
