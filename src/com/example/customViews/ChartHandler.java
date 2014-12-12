@@ -155,4 +155,8 @@ public class ChartHandler {
 		else
 			initializeChart(chart, ChartState.week);
 	}
+	
+	public static void zoom(ChartView chart) {
+		
+	}
 }
