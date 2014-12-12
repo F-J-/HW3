@@ -120,10 +120,10 @@ public class CalendarFragment extends Fragment {
 					cost = b.cost;
 					income = b.income;
 				}
-				if (income != 0)
+				if (income != 0 && cost != 0)
 					blv.setValue(cost * 100 / income);
 				else
-					blv.setValue(100);
+					blv.setValue(0);
 			}
 		};
 		handler[1] = new MyEventHandler() {
@@ -138,10 +138,10 @@ public class CalendarFragment extends Fragment {
 					cost = b.cost;
 					income = b.income;
 				}
-				if (income != 0)
+				if (income != 0 && cost != 0)
 					blv.setValue(cost * 100 / income);
 				else
-					blv.setValue(100);
+					blv.setValue(0);
 			}
 		};
 		blv.setHandler(handler);
@@ -150,13 +150,15 @@ public class CalendarFragment extends Fragment {
 	
 	public void refreshFragment() {
 	    ButtonLoopView blv = (ButtonLoopView) this.getView().findViewById(R.id.myButton);
+	    ChartView chart = (ChartView) this.getView().findViewById(R.id.drawer_content);
 	    BusinessAcount ba = MainActivity.db.findDailyInfo(day, month);
 	    if(ba != null && ba.cost != 0 && ba.income != 0) {
 	    	blv.setValue(ba.cost*100 / ba.income);
-	    	
 	    }
 		else
 			blv.setValue(0);
+	    ChartHandler.initializeValues(month);
+	    ChartHandler.initializeChart(chart, ChartHandler.ChartState.week);
 	    
 	}
 	

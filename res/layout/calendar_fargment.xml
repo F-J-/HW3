@@ -22,12 +22,13 @@
 
  
     <com.example.customViews.ButtonLoopView
-     android:layout_height="300dp"
-     android:layout_width="300dp"
+     android:layout_height="@dimen/button_group_height"
+     android:layout_width="@dimen/button_group_width"
 	 android:id="@+id/myButton"
-     app:thickness="100"
+     app:thickness="70"
+     app:circleColor="@color/arccolor"
      app:count="2"
-     app:arcColor="@color/articlecolor"
+     app:arcColor="@color/arccolor"
      app:names="@array/names" 
      app:angles="@array/angles" />
     </LinearLayout>

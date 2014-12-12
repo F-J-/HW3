@@ -1009,12 +1009,12 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int abc_split_action_bar_is_narrow=0x7f060002;
     }
     public static final class color {
-        public static final int abc_search_url_text_holo=0x7f07000f;
+        public static final int abc_search_url_text_holo=0x7f070010;
         public static final int abc_search_url_text_normal=0x7f070000;
         public static final int abc_search_url_text_pressed=0x7f070002;
         public static final int abc_search_url_text_selected=0x7f070001;
+        public static final int arccolor=0x7f07000c;
         public static final int article_title=0x7f07000d;
-        public static final int articlecolor=0x7f07000c;
         public static final int black=0x7f070007;
         public static final int blue=0x7f070009;
         public static final int blueback=0x7f07000b;
@@ -1022,6 +1022,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int date_color=0x7f070006;
         public static final int gold=0x7f07000a;
         public static final int gray=0x7f070008;
+        public static final int mainpagebackground=0x7f07000f;
         public static final int orange=0x7f070003;
         public static final int transparent=0x7f070005;
         public static final int white=0x7f070004;
@@ -1119,6 +1120,9 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
          */
         public static final int activity_horizontal_margin=0x7f080015;
         public static final int activity_vertical_margin=0x7f080016;
+        public static final int button_group_height=0x7f080018;
+        public static final int button_group_thickness=0x7f080019;
+        public static final int button_group_width=0x7f080017;
         /**  The platform's desired fixed height for a dialog along the major axis
          (the screen is in portrait). This may be either a fraction or a dimension.
  The platform's desired fixed height for a dialog along the major axis
